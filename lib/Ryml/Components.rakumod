@@ -43,9 +43,7 @@ enum WrapT is export <WRAP_hard WRAP_soft>;
 
 
 sub circumfix:<a[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Str :$charset,
@@ -80,7 +78,7 @@ sub circumfix:<a[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<a>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$charset,
@@ -117,9 +115,7 @@ sub circumfix:<a[ ]> (
 
 
 sub circumfix:<abbr[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -142,7 +138,7 @@ sub circumfix:<abbr[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<abbr>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -167,9 +163,7 @@ sub circumfix:<abbr[ ]> (
 
 
 sub circumfix:<acronym[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -192,7 +186,7 @@ sub circumfix:<acronym[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<acronym>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -217,9 +211,7 @@ sub circumfix:<acronym[ ]> (
 
 
 sub circumfix:<address[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -242,7 +234,7 @@ sub circumfix:<address[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<address>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -267,9 +259,7 @@ sub circumfix:<address[ ]> (
 
 
 sub circumfix:<applet[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -302,7 +292,7 @@ sub circumfix:<applet[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<applet>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -337,9 +327,7 @@ sub circumfix:<applet[ ]> (
 
 
 sub circumfix:<area[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Str :$alt,
@@ -373,7 +361,7 @@ sub circumfix:<area[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<area>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$alt,
@@ -409,9 +397,7 @@ sub circumfix:<area[ ]> (
 
 
 sub circumfix:<article[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -434,7 +420,7 @@ sub circumfix:<article[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<article>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -459,9 +445,7 @@ sub circumfix:<article[ ]> (
 
 
 sub circumfix:<aside[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -484,7 +468,7 @@ sub circumfix:<aside[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<aside>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -509,9 +493,7 @@ sub circumfix:<aside[ ]> (
 
 
 sub circumfix:<audio[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -534,7 +516,7 @@ sub circumfix:<audio[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<audio>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -559,9 +541,7 @@ sub circumfix:<audio[ ]> (
 
 
 sub circumfix:<b[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -584,7 +564,7 @@ sub circumfix:<b[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<b>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -609,9 +589,7 @@ sub circumfix:<b[ ]> (
 
 
 sub circumfix:<base[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -636,7 +614,7 @@ sub circumfix:<base[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<base>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -663,9 +641,7 @@ sub circumfix:<base[ ]> (
 
 
 sub circumfix:<basefont[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -691,7 +667,7 @@ sub circumfix:<basefont[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<basefont>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -719,9 +695,7 @@ sub circumfix:<basefont[ ]> (
 
 
 sub circumfix:<bdi[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -744,7 +718,7 @@ sub circumfix:<bdi[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<bdi>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -769,9 +743,7 @@ sub circumfix:<bdi[ ]> (
 
 
 sub circumfix:<bdo[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -794,7 +766,7 @@ sub circumfix:<bdo[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<bdo>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -819,9 +791,7 @@ sub circumfix:<bdo[ ]> (
 
 
 sub circumfix:<big[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -844,7 +814,7 @@ sub circumfix:<big[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<big>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -869,9 +839,7 @@ sub circumfix:<big[ ]> (
 
 
 sub circumfix:<blockquote[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Str :$cite,
@@ -895,7 +863,7 @@ sub circumfix:<blockquote[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<blockquote>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$cite,
@@ -921,9 +889,7 @@ sub circumfix:<blockquote[ ]> (
 
 
 sub circumfix:<body[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Str :$alink,
@@ -952,7 +918,7 @@ sub circumfix:<body[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<body>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$alink,
@@ -983,9 +949,7 @@ sub circumfix:<body[ ]> (
 
 
 sub circumfix:<br[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1009,7 +973,7 @@ sub circumfix:<br[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<br>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1035,9 +999,7 @@ sub circumfix:<br[ ]> (
 
 
 sub circumfix:<button[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Bool :$autofocus,
@@ -1071,7 +1033,7 @@ sub circumfix:<button[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<button>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$autofocus,
@@ -1107,9 +1069,7 @@ sub circumfix:<button[ ]> (
 
 
 sub circumfix:<canvas[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1134,7 +1094,7 @@ sub circumfix:<canvas[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<canvas>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1161,9 +1121,7 @@ sub circumfix:<canvas[ ]> (
 
 
 sub circumfix:<caption[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   CaptionAlignT :$align,
@@ -1187,7 +1145,7 @@ sub circumfix:<caption[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<caption>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -1213,9 +1171,7 @@ sub circumfix:<caption[ ]> (
 
 
 sub circumfix:<center[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1238,7 +1194,7 @@ sub circumfix:<center[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<center>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1263,9 +1219,7 @@ sub circumfix:<center[ ]> (
 
 
 sub circumfix:<cite[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1288,7 +1242,7 @@ sub circumfix:<cite[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<cite>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1313,9 +1267,7 @@ sub circumfix:<cite[ ]> (
 
 
 sub circumfix:<code[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1338,7 +1290,7 @@ sub circumfix:<code[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<code>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1363,9 +1315,7 @@ sub circumfix:<code[ ]> (
 
 
 sub circumfix:<col[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -1394,7 +1344,7 @@ sub circumfix:<col[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<col>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -1425,9 +1375,7 @@ sub circumfix:<col[ ]> (
 
 
 sub circumfix:<colgroup[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -1456,7 +1404,7 @@ sub circumfix:<colgroup[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<colgroup>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -1487,9 +1435,7 @@ sub circumfix:<colgroup[ ]> (
 
 
 sub circumfix:<data[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1513,7 +1459,7 @@ sub circumfix:<data[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<data>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1539,9 +1485,7 @@ sub circumfix:<data[ ]> (
 
 
 sub circumfix:<datalist[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1564,7 +1508,7 @@ sub circumfix:<datalist[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<datalist>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1589,9 +1533,7 @@ sub circumfix:<datalist[ ]> (
 
 
 sub circumfix:<dd[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1614,7 +1556,7 @@ sub circumfix:<dd[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<dd>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1639,9 +1581,7 @@ sub circumfix:<dd[ ]> (
 
 
 sub circumfix:<del[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Str :$cite,
@@ -1666,7 +1606,7 @@ sub circumfix:<del[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<del>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$cite,
@@ -1693,9 +1633,7 @@ sub circumfix:<del[ ]> (
 
 
 sub circumfix:<details[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1718,7 +1656,7 @@ sub circumfix:<details[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<details>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1743,9 +1681,7 @@ sub circumfix:<details[ ]> (
 
 
 sub circumfix:<dfn[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1768,7 +1704,7 @@ sub circumfix:<dfn[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<dfn>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1793,9 +1729,7 @@ sub circumfix:<dfn[ ]> (
 
 
 sub circumfix:<dialog[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1819,7 +1753,7 @@ sub circumfix:<dialog[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<dialog>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1845,9 +1779,7 @@ sub circumfix:<dialog[ ]> (
 
 
 sub circumfix:<dir[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1871,7 +1803,7 @@ sub circumfix:<dir[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<dir>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1897,9 +1829,7 @@ sub circumfix:<dir[ ]> (
 
 
 sub circumfix:<div[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   DivAlignT :$align,
@@ -1923,7 +1853,7 @@ sub circumfix:<div[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<div>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -1949,9 +1879,7 @@ sub circumfix:<div[ ]> (
 
 
 sub circumfix:<dl[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1967,14 +1895,13 @@ sub circumfix:<dl[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
-  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
    --> RyEl) is export {
 
   RyEl.new(:tag<dl>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -1999,9 +1926,7 @@ sub circumfix:<dl[ ]> (
 
 
 sub circumfix:<dt[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2017,14 +1942,13 @@ sub circumfix:<dt[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
-  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
    --> RyEl) is export {
 
   RyEl.new(:tag<dt>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2049,9 +1973,7 @@ sub circumfix:<dt[ ]> (
 
 
 sub circumfix:<em[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2067,14 +1989,13 @@ sub circumfix:<em[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
-  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
    --> RyEl) is export {
 
   RyEl.new(:tag<em>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2099,9 +2020,7 @@ sub circumfix:<em[ ]> (
 
 
 sub circumfix:<embed[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2117,14 +2036,13 @@ sub circumfix:<embed[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
-  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
    --> RyEl) is export {
 
   RyEl.new(:tag<embed>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2149,9 +2067,7 @@ sub circumfix:<embed[ ]> (
 
 
 sub circumfix:<fieldset[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2167,14 +2083,13 @@ sub circumfix:<fieldset[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
-  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
    --> RyEl) is export {
 
   RyEl.new(:tag<fieldset>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2199,9 +2114,7 @@ sub circumfix:<fieldset[ ]> (
 
 
 sub circumfix:<figcaption[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2217,14 +2130,13 @@ sub circumfix:<figcaption[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
-  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
    --> RyEl) is export {
 
   RyEl.new(:tag<figcaption>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2249,9 +2161,7 @@ sub circumfix:<figcaption[ ]> (
 
 
 sub circumfix:<figure[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2267,14 +2177,13 @@ sub circumfix:<figure[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
-  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
    --> RyEl) is export {
 
   RyEl.new(:tag<figure>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2299,9 +2208,7 @@ sub circumfix:<figure[ ]> (
 
 
 sub circumfix:<font[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2327,7 +2234,7 @@ sub circumfix:<font[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<font>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2355,9 +2262,7 @@ sub circumfix:<font[ ]> (
 
 
 sub circumfix:<footer[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2373,14 +2278,13 @@ sub circumfix:<footer[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
-  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
    --> RyEl) is export {
 
   RyEl.new(:tag<footer>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2405,9 +2309,7 @@ sub circumfix:<footer[ ]> (
 
 
 sub circumfix:<form[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accept,
   Str :$accept-charset,
@@ -2439,7 +2341,7 @@ sub circumfix:<form[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<form>,
-           :@c,
+           :@children,
            :tags({
              :$accept,
              :$accept-charset,
@@ -2473,9 +2375,7 @@ sub circumfix:<form[ ]> (
 
 
 sub circumfix:<frame[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2506,7 +2406,7 @@ sub circumfix:<frame[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<frame>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2539,9 +2439,7 @@ sub circumfix:<frame[ ]> (
 
 
 sub circumfix:<frameset[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2566,7 +2464,7 @@ sub circumfix:<frameset[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<frameset>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2593,9 +2491,7 @@ sub circumfix:<frameset[ ]> (
 
 
 sub circumfix:<head[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2619,7 +2515,7 @@ sub circumfix:<head[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<head>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2645,9 +2541,7 @@ sub circumfix:<head[ ]> (
 
 
 sub circumfix:<header[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2669,7 +2563,7 @@ sub circumfix:<header[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<header>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2694,9 +2588,7 @@ sub circumfix:<header[ ]> (
 
 
 sub circumfix:<headings[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   HeadingsAlignT :$align,
@@ -2720,7 +2612,7 @@ sub circumfix:<headings[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<headings>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -2746,9 +2638,7 @@ sub circumfix:<headings[ ]> (
 
 
 sub circumfix:<hgroup[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2770,7 +2660,7 @@ sub circumfix:<hgroup[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<hgroup>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2795,9 +2685,7 @@ sub circumfix:<hgroup[ ]> (
 
 
 sub circumfix:<hr[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   HrAlignT :$align,
@@ -2824,7 +2712,7 @@ sub circumfix:<hr[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<hr>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -2853,9 +2741,7 @@ sub circumfix:<hr[ ]> (
 
 
 sub circumfix:<html[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2881,7 +2767,7 @@ sub circumfix:<html[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<html>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2909,9 +2795,7 @@ sub circumfix:<html[ ]> (
 
 
 sub circumfix:<i[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2933,7 +2817,7 @@ sub circumfix:<i[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<i>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -2958,9 +2842,7 @@ sub circumfix:<i[ ]> (
 
 
 sub circumfix:<iframe[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -2996,7 +2878,7 @@ sub circumfix:<iframe[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<iframe>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -3034,9 +2916,7 @@ sub circumfix:<iframe[ ]> (
 
 
 sub circumfix:<img[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -3071,7 +2951,7 @@ sub circumfix:<img[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<img>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -3108,9 +2988,7 @@ sub circumfix:<img[ ]> (
 
 
 sub circumfix:<input[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   AcceptT :$accept,
   Str :$accesskey,
@@ -3164,7 +3042,7 @@ sub circumfix:<input[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<input>,
-           :@c,
+           :@children,
            :tags({
              :$accept,
              :$accesskey,
@@ -3220,9 +3098,7 @@ sub circumfix:<input[ ]> (
 
 
 sub circumfix:<ins[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Str :$cite,
@@ -3247,7 +3123,7 @@ sub circumfix:<ins[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<ins>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$cite,
@@ -3274,9 +3150,7 @@ sub circumfix:<ins[ ]> (
 
 
 sub circumfix:<kbd[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3298,7 +3172,7 @@ sub circumfix:<kbd[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<kbd>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3323,9 +3197,7 @@ sub circumfix:<kbd[ ]> (
 
 
 sub circumfix:<keygen[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3347,7 +3219,7 @@ sub circumfix:<keygen[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<keygen>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3372,9 +3244,7 @@ sub circumfix:<keygen[ ]> (
 
 
 sub circumfix:<label[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3399,7 +3269,7 @@ sub circumfix:<label[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<label>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3426,9 +3296,7 @@ sub circumfix:<label[ ]> (
 
 
 sub circumfix:<legend[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   LegendAlignT :$align,
@@ -3452,7 +3320,7 @@ sub circumfix:<legend[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<legend>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -3478,9 +3346,7 @@ sub circumfix:<legend[ ]> (
 
 
 sub circumfix:<li[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3505,7 +3371,7 @@ sub circumfix:<li[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<li>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3532,9 +3398,7 @@ sub circumfix:<li[ ]> (
 
 
 sub circumfix:<link[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Str :$charset,
@@ -3567,7 +3431,7 @@ sub circumfix:<link[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<link>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$charset,
@@ -3602,9 +3466,7 @@ sub circumfix:<link[ ]> (
 
 
 sub circumfix:<main[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3626,7 +3488,7 @@ sub circumfix:<main[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<main>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3651,9 +3513,7 @@ sub circumfix:<main[ ]> (
 
 
 sub circumfix:<map[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3677,7 +3537,7 @@ sub circumfix:<map[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<map>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3703,9 +3563,7 @@ sub circumfix:<map[ ]> (
 
 
 sub circumfix:<mark[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3727,7 +3585,7 @@ sub circumfix:<mark[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<mark>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3752,9 +3610,7 @@ sub circumfix:<mark[ ]> (
 
 
 sub circumfix:<menu[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3779,7 +3635,7 @@ sub circumfix:<menu[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<menu>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3806,9 +3662,7 @@ sub circumfix:<menu[ ]> (
 
 
 sub circumfix:<menuitem[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3830,7 +3684,7 @@ sub circumfix:<menuitem[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<menuitem>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3855,9 +3709,7 @@ sub circumfix:<menuitem[ ]> (
 
 
 sub circumfix:<meta[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Str :$charset,
@@ -3885,7 +3737,7 @@ sub circumfix:<meta[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<meta>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$charset,
@@ -3915,9 +3767,7 @@ sub circumfix:<meta[ ]> (
 
 
 sub circumfix:<meter[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3939,7 +3789,7 @@ sub circumfix:<meter[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<meter>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -3964,9 +3814,7 @@ sub circumfix:<meter[ ]> (
 
 
 sub circumfix:<nav[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3988,7 +3836,7 @@ sub circumfix:<nav[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<nav>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4013,9 +3861,7 @@ sub circumfix:<nav[ ]> (
 
 
 sub circumfix:<noframes[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4037,7 +3883,7 @@ sub circumfix:<noframes[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<noframes>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4062,9 +3908,7 @@ sub circumfix:<noframes[ ]> (
 
 
 sub circumfix:<noscript[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4086,7 +3930,7 @@ sub circumfix:<noscript[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<noscript>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4111,9 +3955,7 @@ sub circumfix:<noscript[ ]> (
 
 
 sub circumfix:<object[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -4152,7 +3994,7 @@ sub circumfix:<object[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<object>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -4193,9 +4035,7 @@ sub circumfix:<object[ ]> (
 
 
 sub circumfix:<ol[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4222,7 +4062,7 @@ sub circumfix:<ol[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<ol>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4251,9 +4091,7 @@ sub circumfix:<ol[ ]> (
 
 
 sub circumfix:<optgroup[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4278,7 +4116,7 @@ sub circumfix:<optgroup[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<optgroup>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4305,9 +4143,7 @@ sub circumfix:<optgroup[ ]> (
 
 
 sub circumfix:<option[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4334,7 +4170,7 @@ sub circumfix:<option[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<option>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4363,9 +4199,7 @@ sub circumfix:<option[ ]> (
 
 
 sub circumfix:<output[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4387,7 +4221,7 @@ sub circumfix:<output[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<output>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4412,9 +4246,7 @@ sub circumfix:<output[ ]> (
 
 
 sub circumfix:<p[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   PAlignT :$align,
@@ -4438,7 +4270,7 @@ sub circumfix:<p[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<p>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -4464,9 +4296,7 @@ sub circumfix:<p[ ]> (
 
 
 sub circumfix:<param[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4493,7 +4323,7 @@ sub circumfix:<param[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<param>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4522,9 +4352,7 @@ sub circumfix:<param[ ]> (
 
 
 sub circumfix:<picture[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4546,7 +4374,7 @@ sub circumfix:<picture[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<picture>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4571,9 +4399,7 @@ sub circumfix:<picture[ ]> (
 
 
 sub circumfix:<pre[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4597,7 +4423,7 @@ sub circumfix:<pre[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<pre>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4623,9 +4449,7 @@ sub circumfix:<pre[ ]> (
 
 
 sub circumfix:<progress[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4647,7 +4471,7 @@ sub circumfix:<progress[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<progress>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4672,9 +4496,7 @@ sub circumfix:<progress[ ]> (
 
 
 sub circumfix:<q[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Str :$cite,
@@ -4698,7 +4520,7 @@ sub circumfix:<q[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<q>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$cite,
@@ -4724,9 +4546,7 @@ sub circumfix:<q[ ]> (
 
 
 sub circumfix:<rp[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4748,7 +4568,7 @@ sub circumfix:<rp[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<rp>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4773,9 +4593,7 @@ sub circumfix:<rp[ ]> (
 
 
 sub circumfix:<rt[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4797,7 +4615,7 @@ sub circumfix:<rt[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<rt>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4822,9 +4640,7 @@ sub circumfix:<rt[ ]> (
 
 
 sub circumfix:<ruby[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4846,7 +4662,7 @@ sub circumfix:<ruby[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<ruby>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4871,9 +4687,7 @@ sub circumfix:<ruby[ ]> (
 
 
 sub circumfix:<s[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4895,7 +4709,7 @@ sub circumfix:<s[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<s>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4920,9 +4734,7 @@ sub circumfix:<s[ ]> (
 
 
 sub circumfix:<samp[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4944,7 +4756,7 @@ sub circumfix:<samp[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<samp>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -4969,9 +4781,7 @@ sub circumfix:<samp[ ]> (
 
 
 sub circumfix:<script[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Bool :$async,
@@ -5000,7 +4810,7 @@ sub circumfix:<script[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<script>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$async,
@@ -5031,9 +4841,7 @@ sub circumfix:<script[ ]> (
 
 
 sub circumfix:<section[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5055,7 +4863,7 @@ sub circumfix:<section[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<section>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5080,9 +4888,7 @@ sub circumfix:<section[ ]> (
 
 
 sub circumfix:<select[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Bool :$autofocus,
@@ -5112,7 +4918,7 @@ sub circumfix:<select[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<select>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$autofocus,
@@ -5144,9 +4950,7 @@ sub circumfix:<select[ ]> (
 
 
 sub circumfix:<small[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5168,7 +4972,7 @@ sub circumfix:<small[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<small>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5193,9 +4997,7 @@ sub circumfix:<small[ ]> (
 
 
 sub circumfix:<source[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5217,7 +5019,7 @@ sub circumfix:<source[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<source>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5242,9 +5044,7 @@ sub circumfix:<source[ ]> (
 
 
 sub circumfix:<span[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5266,7 +5066,7 @@ sub circumfix:<span[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<span>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5291,9 +5091,7 @@ sub circumfix:<span[ ]> (
 
 
 sub circumfix:<strike[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5315,7 +5113,7 @@ sub circumfix:<strike[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<strike>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5340,9 +5138,7 @@ sub circumfix:<strike[ ]> (
 
 
 sub circumfix:<strong[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5364,7 +5160,7 @@ sub circumfix:<strong[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<strong>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5389,9 +5185,7 @@ sub circumfix:<strong[ ]> (
 
 
 sub circumfix:<style[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5417,7 +5211,7 @@ sub circumfix:<style[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<style>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5445,9 +5239,7 @@ sub circumfix:<style[ ]> (
 
 
 sub circumfix:<sub[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5469,7 +5261,7 @@ sub circumfix:<sub[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<sub>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5494,9 +5286,7 @@ sub circumfix:<sub[ ]> (
 
 
 sub circumfix:<summary[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5518,7 +5308,7 @@ sub circumfix:<summary[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<summary>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5543,9 +5333,7 @@ sub circumfix:<summary[ ]> (
 
 
 sub circumfix:<sup[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5567,7 +5355,7 @@ sub circumfix:<sup[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<sup>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5592,9 +5380,7 @@ sub circumfix:<sup[ ]> (
 
 
 sub circumfix:<svg[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5616,7 +5402,7 @@ sub circumfix:<svg[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<svg>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5641,9 +5427,7 @@ sub circumfix:<svg[ ]> (
 
 
 sub circumfix:<table[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   TableAlignT :$align,
@@ -5676,7 +5460,7 @@ sub circumfix:<table[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<table>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -5711,9 +5495,7 @@ sub circumfix:<table[ ]> (
 
 
 sub circumfix:<tbody[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -5740,7 +5522,7 @@ sub circumfix:<tbody[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<tbody>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -5769,9 +5551,7 @@ sub circumfix:<tbody[ ]> (
 
 
 sub circumfix:<td[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$abbr,
   Str :$accesskey,
@@ -5808,7 +5588,7 @@ sub circumfix:<td[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<td>,
-           :@c,
+           :@children,
            :tags({
              :$abbr,
              :$accesskey,
@@ -5847,9 +5627,7 @@ sub circumfix:<td[ ]> (
 
 
 sub circumfix:<template[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5871,7 +5649,7 @@ sub circumfix:<template[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<template>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -5896,9 +5674,7 @@ sub circumfix:<template[ ]> (
 
 
 sub circumfix:<textarea[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Bool :$autofocus,
@@ -5933,7 +5709,7 @@ sub circumfix:<textarea[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<textarea>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$autofocus,
@@ -5970,9 +5746,7 @@ sub circumfix:<textarea[ ]> (
 
 
 sub circumfix:<tfoot[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -5999,7 +5773,7 @@ sub circumfix:<tfoot[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<tfoot>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -6028,9 +5802,7 @@ sub circumfix:<tfoot[ ]> (
 
 
 sub circumfix:<th[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$abbr,
   Str :$accesskey,
@@ -6068,7 +5840,7 @@ sub circumfix:<th[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<th>,
-           :@c,
+           :@children,
            :tags({
              :$abbr,
              :$accesskey,
@@ -6108,9 +5880,7 @@ sub circumfix:<th[ ]> (
 
 
 sub circumfix:<thead[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -6137,7 +5907,7 @@ sub circumfix:<thead[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<thead>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -6166,9 +5936,7 @@ sub circumfix:<thead[ ]> (
 
 
 sub circumfix:<time[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6190,7 +5958,7 @@ sub circumfix:<time[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<time>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -6215,9 +5983,7 @@ sub circumfix:<time[ ]> (
 
 
 sub circumfix:<title[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6239,7 +6005,7 @@ sub circumfix:<title[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<title>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -6264,9 +6030,7 @@ sub circumfix:<title[ ]> (
 
 
 sub circumfix:<tr[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -6294,7 +6058,7 @@ sub circumfix:<tr[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<tr>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$align,
@@ -6324,9 +6088,7 @@ sub circumfix:<tr[ ]> (
 
 
 sub circumfix:<track[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6348,7 +6110,7 @@ sub circumfix:<track[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<track>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -6373,9 +6135,7 @@ sub circumfix:<track[ ]> (
 
 
 sub circumfix:<tt[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6397,7 +6157,7 @@ sub circumfix:<tt[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<tt>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -6422,9 +6182,7 @@ sub circumfix:<tt[ ]> (
 
 
 sub circumfix:<u[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6446,7 +6204,7 @@ sub circumfix:<u[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<u>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -6471,9 +6229,7 @@ sub circumfix:<u[ ]> (
 
 
 sub circumfix:<ul[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6498,7 +6254,7 @@ sub circumfix:<ul[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<ul>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -6525,9 +6281,7 @@ sub circumfix:<ul[ ]> (
 
 
 sub circumfix:<var[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6549,7 +6303,7 @@ sub circumfix:<var[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<var>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -6574,9 +6328,7 @@ sub circumfix:<var[ ]> (
 
 
 sub circumfix:<video[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6598,7 +6350,7 @@ sub circumfix:<video[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<video>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,
@@ -6623,9 +6375,7 @@ sub circumfix:<video[ ]> (
 
 
 sub circumfix:<wbr[ ]> (
-  Array[RyEl] :@c,
-  Str :$t,
-  
+  @children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6647,7 +6397,7 @@ sub circumfix:<wbr[ ]> (
    --> RyEl) is export {
 
   RyEl.new(:tag<wbr>,
-           :@c,
+           :@children,
            :tags({
              :$accesskey,
              :$class,

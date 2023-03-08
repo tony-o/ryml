@@ -184,12 +184,10 @@ for %to-gen.keys.sort -> $k {
   my @attr = |%global-attr.keys, |$v.keys;
   $full-out = $full-out ~ "\n\n" ~ qq:to/EOF/;
 sub circumfix:<{$k}[ ]> (
-  Array[RyEl] :\@c,
-  Str :\$t,
-  { gen-attr-str(:tag($k), |%global-attr, |$v) } --> RyEl) is export \{
+  \@children,{ gen-attr-str(:tag($k), |%global-attr, |$v) } --> RyEl) is export \{
 
   RyEl.new(:tag<$k>,
-           :\@c,
+           :\@children,
            :tags(\{{gen-ele-str(|%global-attr, |$v) }          \})
           ); 
 \}
