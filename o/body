@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/htmlref.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<!-- InstanceBeginEditable name="doctitle" -->
+    <title>HTML body Tag - Tutorial Republic</title>
+    <!-- InstanceEndEditable -->
+    	<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="fb:admins" content="100001054961582" />
+<meta property="fb:app_id" content="1404574483159557" />
+<meta property="og:image" content="/lib/images/signature.png" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+<style>
+html,body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,img{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+html,body{min-height:100%}
+p{margin:0 0 12px}
+ol,ul{margin:0 0 12px}
+a,a:active,a:visited{outline:none;color:#1db79f;text-decoration:none}
+a img{border:none;outline:none}
+p code,table td:last-child code,.content ul li code,code.mark{padding:2px 4px;color:#333;background-color:#f1f1f1;border-radius:4px}
+a code{color:inherit;background:none;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+table td{vertical-align:top}
+body{min-width:1300px;color:#414141;background:#fafafa;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",sans-serif;font-size:17px;line-height:1.7}
+input,select,textarea,button,div,span,a{box-sizing:border-box}
+h1,h2,h3,h4{color:#262626;margin:20px 0 10px;line-height:1.5;font-weight:600}
+h1{font-size:34px;margin-top:17px}
+h2{font-size:28px}
+h3{font-size:22px}
+.space{margin-bottom:25px!important}
+.break{margin-bottom:15px!important}
+.text-center{text-align:center!important}
+.scroll{height:195px;overflow-y:scroll}
+.scroll.large{height:245px}
+.scroll.xlarge{height:290px}
+.scroll.xxlarge{height:340px}
+sup{font-size:13px}
+h1 sup{background:#ec0000;border-radius:3px;padding:5px 10px;font-size:15px;color:#fff;position:relative;top:5px}
+.leaderboard{padding-top:14px;position:relative;height:105px;overflow:hidden}
+.intro-image img{display:block;padding:10px 0 25px;max-width:100%}
+.clearfix::after{content:".";display:block;height:0;clear:both;visibility:hidden}
+code,.code,.syntax,.green-box,.sky-box,.gray-box,.pink-box,.red-box,.at-rule,.codebox pre,.console-output,.command{font-size:16px;font-family:Consolas,Monaco,Courier,monospace}
+.console-output{margin:15px 0}
+.command{background:#f2f2f2;padding:16px 18px;margin:15px 0 25px;border-radius:3px}
+hr{border:none;border-bottom:1px solid #e7e9ed;height:1px;margin:30px 0}
+.summary,.topic{border:1px solid #eaeaea;border-width:1px 0;margin:20px 0;padding:10px 0;color:#8e9aa6;line-height:1.5}
+h2.section-title span{display:inline-block;border-bottom:4px solid #c9d7e0;padding:0 50px 12px 0}
+.wrapper{width:1300px;padding:0 15px;margin:0 auto}
+.header{background:#23384e;padding:16px 0}
+input.search{background:#fff;border:0 none;color:#807E7E;float:left;height:38px;line-height:26px;font-size:14px;margin:0 0 0 12px;outline:medium none;padding:6px 14px;width:500px;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,0.6);font-family:inherit}
+.search-btn{color:rgba(0,0,0,.6);background:#ebebeb;border:none;outline:none;cursor:pointer;float:left;height:38px;line-height:46px;width:44px;display:block;margin-left:-2px;border-radius:0 2px 2px 0;box-shadow:0 0 1px rgba(0,0,0,0.7)}
+.logo{width:304px}
+.logo img{height:44px;margin:-3px 0;display:block}
+.site-search{float:left;margin-left:100px}
+.menu{background-color:#f5f5f5;box-shadow:0 1px 1px rgba(0,0,0,.15);position:relative;z-index:9}
+.menu a{color:#666;display:inline-block;padding:0 10px;text-decoration:none;font-size:14px;font-weight:600;height:48px;line-height:48px}
+.menu a:first-child{margin-left:-10px}
+.menu a.tool-link{float:right;display:block;border-radius:30px;line-height:28px;position:relative;height:auto;top:9px;padding:0 12px;color:#1ebba3;border:1px double #1ebba3}
+.fl,.logo{float:left}
+.leftcolumn{width:240px;float:left;font-size:16px;color:#4f4f4f}
+.centercolumn{width:850px;float:left}
+.rightcolumn{width:180px;float:left}
+.content{background:#fff;padding:15px 40px 20px;border:1px solid #dedede;border-top:none;border-radius:1px}
+.sidebar{width:160px;float:left;padding-top:28px;margin-left:20px;position:relative}
+.leftcolumn .segment{margin:16px 0 12px;position:relative;font-size:18px;font-weight:600;line-height:normal}
+.leftcolumn a{color:#4f4f4f;font-size:16px;line-height:26px;display:block;border-bottom:1px solid transparent}
+.leftcolumn ul{list-style:none;padding:0;margin:0}
+.segment,.chapters,.chapters a{float:left;clear:both}
+h1 code,h2 code,h3 code{font:inherit}
+.color-box{margin:15px 0;padding-left:20px}
+.note-box,.warning-box,.tip-box{padding:8px 8px 3px 26px}
+.info-tab{float:left;margin-left:-23px}
+.content ul li{margin-top:7px}
+.extra{padding-top:5px}
+.green-box,.sky-box,.gray-box,.red-box,.pink-box{color:#000;margin-top:15px;padding:10px;background-color:#f6f8fa;border:1px solid #d7e2ec}
+.example{background:#f4f5f6;padding:3px;margin:15px 0}
+.codebox{background:#fff;border:1px solid #ddd}
+.codebox-title{height:41px;padding-left:12px;border-bottom:1px solid #ddd;background:#f5f5f5}
+.codebox-title h4{margin:0;font-size:18px;line-height:40px;float:left;font-weight:600}
+a.try-btn,a.download-btn{width:140px;height:40px;color:#333;font-size:15px;line-height:41px;font-weight:600;text-align:center;text-decoration:none;float:right;display:block;border-left:1px solid #ddd;background:rgba(27,31,35,0.08);box-sizing:border-box;font-family:Arial,sans-serif}
+a.try-btn span{font-size:18px;line-height:normal}
+.hide,.code-style,.box-size,.bottom-link,.footer,.code-style,.snippets,.report-error,.badge,.social,.ad-label,.mobile-only,ul.tree-menu li ul{display:none}
+.skyscraper{width:160px;height:600px;overflow:hidden;margin-bottom:20px;background:#ebecf0}
+.bottom-ad{margin-top:46px;padding:24px;position:relative;background:url(/lib/images/smooth-line.png) no-repeat center #f9f9f9}
+.rectangle-left,.rectangle-right{min-width:336px;min-height:280px;overflow:hidden}
+.fr,a.previous-page,a.next-page,.rectangle-right,.topic-nav{float:right}
+a.previous-page,a.next-page{width:32px;height:32px;line-height:30px}
+.shadow{background:#F7F8F9;padding:3px;margin:10px 0}
+.syntax{color:#2f4959;padding:13px 18px;background:#F9F9FA;border:1px solid #ddd;font-size:15px}
+code[class*="language-"],pre[class*="language-"]{color:#000;background:none;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;text-align:left;white-space:pre;word-break:normal;word-wrap:normal;line-height:1.5;tab-size:4;hyphens:none}
+pre[class*="language-"]{position:relative;margin:.5em 0;overflow:visible;padding:0}
+pre[class*="language-"]>code{position:relative;border-left:10px solid #358ccb;box-shadow:-1px 0 0 0 #358ccb,0 0 0 1px #dfdfdf;background-color:#fdfdfd;background-image:linear-gradient(transparent 50%,rgba(69,142,209,0.04) 50%);background-size:3em 3em;background-origin:content-box;background-attachment:local}
+code[class*="language"]{max-height:inherit;height:inherit;padding:0 1em;display:block;overflow:auto}
+:not(pre) > code[class*="language-"]{position:relative;padding:.2em;border-radius:.3em;color:#c92c2c;border:1px solid rgba(0,0,0,0.1);display:inline;white-space:normal}
+pre[class*="language-"].line-numbers{padding-left:0}
+pre[class*="language-"].line-numbers code{padding-left:3.8em}
+pre[class*="language-"].line-numbers .line-numbers-rows{left:0}
+pre[class*="language-"][data-line]{padding-top:0;padding-bottom:0;padding-left:0}
+pre[data-line] code{position:relative;padding-left:4em}
+pre .line-highlight{margin-top:0}
+pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber;white-space:pre-wrap!important}
+pre.line-numbers > code{position:relative;white-space:inherit}
+.line-numbers-rows,.codebox pre.inactive{display:none}
+.codebox pre.syntax-highlighter{margin:0;padding:0;overflow:auto}
+pre.line-numbers .line-numbers-rows{border-right:3px solid #6CE26C}
+.codebox pre.syntax-highlighter > code{box-shadow:none!important;padding-left:3.8em;background-image:linear-gradient(transparent 50%,#F8F8F8 50%);font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace!important;font-size:16px;line-height:1.5;overflow-wrap:break-word}
+.codebox pre.syntax-highlighter,.codebox pre.syntax-highlighter code{border:none;width:100%;box-sizing:border-box}
+pre.line-numbers code,pre.line-numbers .line-numbers-rows{padding-top:2px;padding-bottom:2px}
+.preview-box{padding:15px;text-align:center;cursor:pointer;overflow:hidden;background:#FFF;border:1px solid #e6e6e6}
+.preview-box a,.preview-box img{display:block;margin:0 auto}
+.download-box{text-align:center;padding:20px 0;margin:20px 0 10px}
+.output-box{border-color:#d4d4d4;border-style:solid;border-width:1px 0;padding:5px 15px;overflow:hidden;background:#fff;margin:10px 0}
+.demo-box{margin-top:15px}
+.subhead{border-bottom:3px solid #DCE3EB;margin-bottom:15px;padding-bottom:10px}
+table.data,table.description{width:100%;font-size:92%}
+table.data th{color:#000;padding:8px 7px;text-align:left;font-size:15px;background:#F8F8F8}
+table.data td{color:#484848;padding:5px 7px;background:#fff}
+table.data th,table.data td{vertical-align:top;border:1px solid #DCE3EB}
+table.data tr.section th,table.data td.section{font-size:15px;background:#f0f4f7}
+table.description th{width:150px}
+table.no-wrap tr td:first-child{white-space:nowrap}
+.topic-nav{padding-right:5px;color:#d0d0d0}
+.topic-nav a{padding:0 15px;margin:0 0 0 5px;position:relative;display:inline-block}
+.topic-nav a::after{font-size:24px;position:absolute;line-height:22px}
+.topic-nav a:first-child{margin:0 5px 0 0}
+.topic-nav a:first-child::after{content:'\00AB';left:-5px}
+.topic-nav a:last-child::after{content:'\00BB';right:-5px}
+@media screen and (max-width: 1280px) {
+body{min-width:1260px}
+.wrapper{width:1260px}
+.leftcolumn{width:230px}
+.centercolumn{width:820px}
+.preview-box img{max-width:100%;height:auto}
+}
+@media screen and (max-width: 800px) {
+body{min-width:100%;max-width:100%;padding-top:46px}
+.wrapper{width:100%;padding:0}
+.header{height:46px;padding:5px 0;position:fixed;top:0;left:0;right:0;width:100%;z-index:99}
+.logo{width:auto;display:block;padding:6px 0 0 60px;position:absolute;left:0;z-index:100}
+.logo img{height:30px}
+.menu{width:100%;padding-left:12px;padding-right:12px;overflow-x:auto;white-space:nowrap}
+.centercolumn{width:100%;float:none}
+.content{padding:10px;border-width:0 0 1px 0}
+.content img{max-width:100%;height:auto}
+.skyscraper{display:inline-block}
+.shadow,.example,.console-output,.content pre{max-width:100%;overflow-x:auto}
+.codebox-title{position:relative}
+.codebox.multi-style-mode pre{padding-top:7px;margin-top:36px;border-top:1px solid #ddd}
+.bottom-ad{height:auto;background:none;padding:30px 0 0;margin:40px 0 0;text-align:center;position:relative}
+.rectangle-left,.rectangle-right{float:none;display:inline-block;margin:10px auto;background:#EDEEF2}
+.leftcolumn,.footer,.social,.site-search,.code-style,.menu a.tool-link,.backdrop{display:none}
+.summary,.topic{padding:5px 0;margin:10px 0}
+.leftcolumn,.centercolumn,.rightcolumn,.sidebar{float:none}
+.header,.menu,.centercolumn,.footer,.appeal-text{width:100%}
+a.try-btn,a.download-btn{width:130px}
+.native-unit{margin-bottom:30px}
+.rightcolumn,.sidebar{margin: 25px auto 0}
+.overview{padding-right:0}
+.scroll-pane{overflow-x:auto}
+table.data{min-width:480px}
+table.data pre{display:inline;white-space:normal}
+table tr th,table tr td{width:auto!important}
+.preview-box{padding:6px}
+.leaderboard{margin:20px 0}
+h1{font-size:30px}
+h2{font-size:24px}
+h3{font-size:20px}
+.codebox pre.syntax-highlighter{overflow-x:auto}
+.codebox pre.syntax-highlighter > code{min-width:614px;height:auto;overflow-x:hidden}
+}
+@media screen and (min-width: 801px) {
+.site-search,.leftcolumn,.social{display:block!important}
+.backdrop{display:none!important}
+.hide-scroll{overflow-x:hidden!important}
+}
+.menu a.old-version{height:21px;font-size:13px;line-height:17px;border:1px double;border-radius:40px;margin-right:10px}</style>
+    
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+    
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-381VQH4NHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-381VQH4NHT');
+</script></head>
+<body>
+    <!--Header-->
+    
+<div class="header">
+    <div class="wrapper clearfix">
+        <button type="button" class="open-menu mobile-only"><i class="icon-menu"></i></button>
+        <div class="logo">
+            <a href="https://www.tutorialrepublic.com/"><img src="/lib/images/logo.svg" alt="TutorialRepublic" /></a>
+        </div>
+        <div class="site-search">
+            <form action="https://www.google.com/search" method="get" target="_blank" class="clearfix">
+                <input type="hidden" value="www.tutorialrepublic.com" name="sitesearch" />
+                <input type="text" name="q" placeholder="Search topics, tutorials, questions and answers..." id="searchInput" class="search" />
+                <button type="submit" class="search-btn"><span class="icon-search"></span></button>
+            </form>
+        </div>
+        <div class="social">                
+            <a href="https://www.facebook.com/tutorialrepublic" target="_blank" title="Join us on Facebook"><i class="icon-facebook"></i></a>
+            <a href="https://twitter.com/tutrepublic" target="_blank" title="Follow us on Twitter"><i class="icon-twitter"></i></a>
+            <a href="/contact-us.php" target="_blank" title="Send us an Email"><i class="icon-mail"></i></a>
+        </div>
+        <button type="button" class="open-search mobile-only">
+            <i class="icon-search"></i>
+        </button>
+    </div>    
+</div>
+<div class="menu">
+    <div class="wrapper">
+        <a href="//www.tutorialrepublic.com" title="Home Page">HOME</a>
+        <a href="/html-tutorial/" title="HTML Tutorial">HTML5</a>            
+        <a href="/css-tutorial/" title="CSS Tutorial">CSS3</a>
+        <a href="/javascript-tutorial/" title="JavaScript Tutorial">JAVASCRIPT</a>
+        <a href="/jquery-tutorial/" title="jQuery Tutorial">JQUERY</a>
+        <a href="/twitter-bootstrap-tutorial/" title="Bootstrap 5 Tutorial">BOOTSTRAP5</a>
+		<a href="/twitter-bootstrap-4-tutorial/" class="old-version" title="Bootstrap 4.6 Tutorial">v4.6</a>
+        <a href="/php-tutorial/" title="PHP Tutorial">PHP7</a> 
+        <a href="/sql-tutorial/" title="SQL Tutorial">SQL</a>
+        <a href="/references.php" title="Web References">REFERENCES</a>
+        <a href="/practice-examples.php" title="Practice Examples and Demos">EXAMPLES</a>
+        <a href="/faq.php" title="Frequently Asked Questions and Answers">FAQ</a>
+        <a href="/snippets/gallery.php" title="Bootstrap Code Snippets" target="_blank">SNIPPETS</a>
+        <a href="/codelab.php" class="tool-link" target="_blank">Online HTML Editor</a>
+    </div>        
+</div>    <!--End:Header-->
+    <div class="wrapper clearfix">
+        <div class="leftcolumn" id="myNav">
+		
+        <div class="segment"><span>HTML</span> Tags</div>
+<div class="chapters code">
+    <a href="/html-reference/html-a-tag.php">&lt;a&gt;</a>
+    <a href="/html-reference/html-abbr-tag.php">&lt;abbr&gt;</a>
+    <a href="/html-reference/html-acronym-tag.php" class="obsolete-tag">&lt;acronym&gt;</a>
+    <a href="/html-reference/html-address-tag.php">&lt;address&gt;</a>
+    <a href="/html-reference/html-applet-tag.php" class="obsolete-tag">&lt;applet&gt;</a>
+    <a href="/html-reference/html-area-tag.php">&lt;area&gt;</a>
+    <a href="/html-reference/html5-article-tag.php">&lt;article&gt;</a>
+    <a href="/html-reference/html5-aside-tag.php">&lt;aside&gt;</a>
+    <a href="/html-reference/html5-audio-tag.php">&lt;audio&gt;</a>
+    <a href="/html-reference/html-b-tag.php">&lt;b&gt;</a>
+    <a href="/html-reference/html-base-tag.php">&lt;base&gt;</a>
+    <a href="/html-reference/html-basefont-tag.php" class="obsolete-tag">&lt;basefont&gt;</a>
+    <a href="/html-reference/html5-bdi-tag.php">&lt;bdi&gt;</a>
+    <a href="/html-reference/html-bdo-tag.php">&lt;bdo&gt;</a>
+    <a href="/html-reference/html-big-tag.php" class="obsolete-tag">&lt;big&gt;</a>
+    <a href="/html-reference/html-blockquote-tag.php">&lt;blockquote&gt;</a>
+    <a href="/html-reference/html-body-tag.php">&lt;body&gt;</a>
+    <a href="/html-reference/html-br-tag.php">&lt;br&gt;</a>
+    <a href="/html-reference/html-button-tag.php">&lt;button&gt;</a>
+    <a href="/html-reference/html5-canvas-tag.php">&lt;canvas&gt;</a>
+    <a href="/html-reference/html-caption-tag.php">&lt;caption&gt;</a>
+    <a href="/html-reference/html-center-tag.php" class="obsolete-tag">&lt;center&gt;</a>
+    <a href="/html-reference/html-cite-tag.php">&lt;cite&gt;</a>
+    <a href="/html-reference/html-code-tag.php">&lt;code&gt;</a>
+    <a href="/html-reference/html-col-tag.php">&lt;col&gt;</a>
+    <a href="/html-reference/html-colgroup-tag.php">&lt;colgroup&gt;</a>
+    <a href="/html-reference/html5-data-tag.php">&lt;data&gt;</a>
+    <a href="/html-reference/html5-datalist-tag.php">&lt;datalist&gt;</a>
+    <a href="/html-reference/html-dd-tag.php">&lt;dd&gt;</a>
+    <a href="/html-reference/html-del-tag.php">&lt;del&gt;</a>
+    <a href="/html-reference/html5-details-tag.php">&lt;details&gt;</a>
+    <a href="/html-reference/html-dfn-tag.php">&lt;dfn&gt;</a>
+    <a href="/html-reference/html5-dialog-tag.php">&lt;dialog&gt;</a>
+    <a href="/html-reference/html-dir-tag.php" class="obsolete-tag">&lt;dir&gt;</a>
+    <a href="/html-reference/html-div-tag.php">&lt;div&gt;</a>
+    <a href="/html-reference/html-dl-tag.php">&lt;dl&gt;</a>
+    <a href="/html-reference/html-dt-tag.php">&lt;dt&gt;</a>
+    <a href="/html-reference/html-em-tag.php">&lt;em&gt;</a>
+    <a href="/html-reference/html5-embed-tag.php">&lt;embed&gt;</a>
+    <a href="/html-reference/html-fieldset-tag.php">&lt;fieldset&gt;</a>
+    <a href="/html-reference/html5-figcaption-tag.php">&lt;figcaption&gt;</a>
+    <a href="/html-reference/html5-figure-tag.php">&lt;figure&gt;</a>
+    <a href="/html-reference/html-font-tag.php" class="obsolete-tag">&lt;font&gt;</a>
+    <a href="/html-reference/html5-footer-tag.php">&lt;footer&gt;</a>
+    <a href="/html-reference/html-form-tag.php">&lt;form&gt;</a>
+    <a href="/html-reference/html-frame-tag.php" class="obsolete-tag">&lt;frame&gt;</a>
+    <a href="/html-reference/html-frameset-tag.php" class="obsolete-tag">&lt;frameset&gt;</a>
+    <a href="/html-reference/html-head-tag.php">&lt;head&gt;</a>
+    <a href="/html-reference/html5-header-tag.php">&lt;header&gt;</a>
+    <a href="/html-reference/html5-hgroup-tag.php">&lt;hgroup&gt;</a>
+    <a href="/html-reference/html-headings-tag.php">&lt;h1&gt; &ndash; &lt;h6&gt;</a>
+    <a href="/html-reference/html-hr-tag.php">&lt;hr&gt;</a>
+    <a href="/html-reference/html-html-tag.php">&lt;html&gt;</a>
+    <a href="/html-reference/html-i-tag.php">&lt;i&gt;</a>
+    <a href="/html-reference/html-iframe-tag.php">&lt;iframe&gt;</a>
+    <a href="/html-reference/html-img-tag.php">&lt;img&gt;</a>
+    <a href="/html-reference/html-input-tag.php">&lt;input&gt;</a>
+    <a href="/html-reference/html-ins-tag.php">&lt;ins&gt;</a>
+    <a href="/html-reference/html-kbd-tag.php">&lt;kbd&gt;</a>
+    <a href="/html-reference/html5-keygen-tag.php">&lt;keygen&gt;</a>
+    <a href="/html-reference/html-label-tag.php">&lt;label&gt;</a>
+    <a href="/html-reference/html-legend-tag.php">&lt;legend&gt;</a>
+    <a href="/html-reference/html-li-tag.php">&lt;li&gt;</a>
+    <a href="/html-reference/html-link-tag.php">&lt;link&gt;</a>
+    <a href="/html-reference/html5-main-tag.php">&lt;main&gt;</a>
+    <a href="/html-reference/html-map-tag.php">&lt;map&gt;</a>
+    <a href="/html-reference/html5-mark-tag.php">&lt;mark&gt;</a>
+    <a href="/html-reference/html-menu-tag.php">&lt;menu&gt;</a>
+	<a href="/html-reference/html5-menuitem-tag.php">&lt;menuitem&gt;</a>
+    <a href="/html-reference/html-meta-tag.php">&lt;meta&gt;</a>
+    <a href="/html-reference/html5-meter-tag.php">&lt;meter&gt;</a>
+    <a href="/html-reference/html5-nav-tag.php">&lt;nav&gt;</a>
+    <a href="/html-reference/html-noframes-tag.php" class="obsolete-tag">&lt;noframes&gt;</a>
+    <a href="/html-reference/html-noscript-tag.php">&lt;noscript&gt;</a>
+    <a href="/html-reference/html-object-tag.php">&lt;object&gt;</a>
+    <a href="/html-reference/html-ol-tag.php">&lt;ol&gt;</a>
+    <a href="/html-reference/html-optgroup-tag.php">&lt;optgroup&gt;</a>
+    <a href="/html-reference/html-option-tag.php">&lt;option&gt;</a>
+    <a href="/html-reference/html5-output-tag.php">&lt;output&gt;</a>
+    <a href="/html-reference/html-p-tag.php">&lt;p&gt;</a>
+    <a href="/html-reference/html-param-tag.php">&lt;param&gt;</a>
+    <a href="/html-reference/html5-picture-tag.php">&lt;picture&gt;</a>
+    <a href="/html-reference/html-pre-tag.php">&lt;pre&gt;</a>
+    <a href="/html-reference/html5-progress-tag.php">&lt;progress&gt;</a>
+    <a href="/html-reference/html-q-tag.php">&lt;q&gt;</a>
+    <a href="/html-reference/html5-rp-tag.php">&lt;rp&gt;</a>
+    <a href="/html-reference/html5-rt-tag.php">&lt;rt&gt;</a>
+    <a href="/html-reference/html5-ruby-tag.php">&lt;ruby&gt;</a>  
+    <a href="/html-reference/html-s-tag.php">&lt;s&gt;</a>
+    <a href="/html-reference/html-samp-tag.php">&lt;samp&gt;</a>
+    <a href="/html-reference/html-script-tag.php">&lt;script&gt;</a>
+    <a href="/html-reference/html5-section-tag.php">&lt;section&gt;</a>
+    <a href="/html-reference/html-select-tag.php">&lt;select&gt;</a>
+    <a href="/html-reference/html-small-tag.php">&lt;small&gt;</a>
+    <a href="/html-reference/html5-source-tag.php">&lt;source&gt;</a>
+    <a href="/html-reference/html-span-tag.php">&lt;span&gt;</a>
+    <a href="/html-reference/html-strike-tag.php" class="obsolete-tag">&lt;strike&gt;</a>
+    <a href="/html-reference/html-strong-tag.php">&lt;strong&gt;</a>
+    <a href="/html-reference/html-style-tag.php">&lt;style&gt;</a>
+    <a href="/html-reference/html-sub-tag.php">&lt;sub&gt;</a>
+    <a href="/html-reference/html5-summary-tag.php">&lt;summary&gt;</a>
+    <a href="/html-reference/html-sup-tag.php">&lt;sup&gt;</a>
+    <a href="/html-reference/html5-svg-tag.php">&lt;svg&gt;</a>
+    <a href="/html-reference/html-table-tag.php">&lt;table&gt;</a>
+    <a href="/html-reference/html-tbody-tag.php">&lt;tbody&gt;</a>
+    <a href="/html-reference/html-td-tag.php">&lt;td&gt;</a>
+    <a href="/html-reference/html5-template-tag.php">&lt;template&gt;</a>
+    <a href="/html-reference/html-textarea-tag.php">&lt;textarea&gt;</a>
+    <a href="/html-reference/html-tfoot-tag.php">&lt;tfoot&gt;</a>
+    <a href="/html-reference/html-th-tag.php">&lt;th&gt;</a>
+    <a href="/html-reference/html-thead-tag.php">&lt;thead&gt;</a>
+    <a href="/html-reference/html5-time-tag.php">&lt;time&gt;</a>
+    <a href="/html-reference/html-title-tag.php">&lt;title&gt;</a>
+    <a href="/html-reference/html-tr-tag.php">&lt;tr&gt;</a>
+    <a href="/html-reference/html5-track-tag.php">&lt;track&gt;</a>
+    <a href="/html-reference/html-tt-tag.php" class="obsolete-tag">&lt;tt&gt;</a>
+    <a href="/html-reference/html-u-tag.php">&lt;u&gt;</a>
+    <a href="/html-reference/html-ul-tag.php">&lt;ul&gt;</a>
+    <a href="/html-reference/html-var-tag.php">&lt;var&gt;</a>
+    <a href="/html-reference/html5-video-tag.php">&lt;video&gt;</a>
+    <a href="/html-reference/html5-wbr-tag.php">&lt;wbr&gt;</a>
+</div>        
+                </div>
+        <div class="centercolumn">
+            <!--Text Content-->
+            <div class="content">
+                <div class="leaderboard">
+
+    <div class="ad-label">Advertisements</div>
+
+    <div class="ad-container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Responsive Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:block;width:100%;max-width:728px;height:90px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="4302666817"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>    </div>
+
+    
+</div>                <!-- InstanceBeginEditable name="main_content" -->
+                <h1>HTML <code>&lt;body&gt;</code> Tag</h1>
+                <p class="topic">Topic: <a href="../faq.php#php-mysql">HTML Tag Reference</a><span class="topic-nav"><a href="html-blockquote-tag.php">Prev</a>|<a href="html-br-tag.php">Next</a></span></p>
+                <h2>Description</h2>
+                <p>The <code>&lt;body&gt;</code> element represents the main content of the document. It typically wraps around all of the content that will be displayed on screen, such as headings, paragraphs, hyperlinks, images, forms, tables, lists, videos and so on.</p>
+                <p>The following table summarizes the usages context and the version history of this tag.</p>
+                <div class="shadow">
+                    <table class="data description">
+                        <tr>
+                            <th>Parent:</th>
+                            <td><a href="html-html-tag.php"><code>&lt;html&gt;</code></a></td>
+                        </tr>
+                        <tr>
+                            <th>Placement:</th>
+                            <td>Block</td>
+                        </tr>
+                        <tr>
+                            <th>Content:</th>
+                            <td>Block, inline, and text</td>
+                        </tr>
+                        <tr>
+                            <th>Start/End Tag:</th>
+                            <td>Start tag: <strong>optional</strong>, End tag: <strong>optional</strong></td>
+                        </tr>
+                        <tr>
+                            <th>Version:</th>
+                            <td>HTML 2, 3.2, 4, 4.01, 5</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr />
+                <h2>Syntax</h2>
+                <p>The basic syntax of the <code>&lt;body&gt;</code> tag is given with:</p>
+                <div class="shadow">
+                    <div class="syntax"><i>HTML&thinsp;/&thinsp;XHTML:</i> <span class="tag">&lt;body&gt;</span> ... <span class="tag">&lt;/body&gt;</span></div>
+                </div>
+                <p>The example below shows the <code>&lt;body&gt;</code> tag in action.</p>
+                <!--Code box-->
+                <div class="example">
+                    <div class="codebox">
+                        <div class="codebox-title"><h4>Example</h4><a href="../codelab.php?topic=html&amp;file=body-tag" target="_blank" class="try-btn" title="Try this code using online Editor">Try this code <span>&raquo;</span></a></div>
+                        <pre class="syntax-highlighter line-numbers"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;HTML Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+                <!--End:Code box-->
+                <hr />
+                <h2>Tag-Specific Attributes</h2>
+                <p>The following table shows the attributes that are specific to the <code>&lt;body&gt;</code> tag.</p>
+                <div class="shadow">
+                    <table class="data">
+                        <tr>
+                        <th>Attribute</th>
+                            <th style="width:65px;">Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><code>alink</code></td>
+                            <td><i>color</i></td>
+                            <td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Specifies the color of active link (while the mouse button is held down during a click) in a document.</td>
+                        </tr>
+                        <tr>
+                            <td><code>background</code></td>
+                            <td><i>URL</i></td>
+                            <td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Specifies a background image for the document.</td>
+                        </tr>
+                        <tr>
+                            <td><code>bgcolor</code></td>
+                            <td><i>color</i></td>
+                            <td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Specifies the background color of the document.</td>
+                        </tr>
+                        <tr>
+                            <td><code>link</code></td>
+                            <td><i>color</i></td>
+                            <td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Specifies the color of unvisited links in a document.</td>
+                        </tr>
+                        <tr>
+                            <td><code>text</code></td>
+                            <td><i>color</i></td>
+                            <td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Specifies the foreground color for text in a document.</td>
+                        </tr>
+                        <tr>
+                            <td><code>vlink</code></td>
+                            <td><i>color</i></td>
+                            <td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Specifies the color of visited links (links that have already been followed) in a document.</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr />
+                <h2>Global Attributes</h2>
+                <p>Like all other HTML tags, the <code>&lt;body&gt;</code> tag supports the <a href="html5-global-attributes.php">global attributes in HTML5</a>.</p>
+                <hr />
+                <h2>Event Attributes</h2>
+                <p>The <code>&lt;body&gt;</code> tag also supports the <a href="html5-event-attributes.php">event attributes in HTML5</a>.</p>
+                <hr />
+                <h2>Browser Compatibility</h2>
+                <p>The <code>&lt;body&gt;</code> tag is supported in all major modern browsers.</p>
+                <div class="shadow">
+                    <div class="support">
+                        <table>
+                            <tr>
+                                <td><img src="../lib/images/browsers-icon.png" alt="Browsers Icon" /></td>
+                                <td>
+                                    <h2>Basic Support&mdash;</h2>
+                                    <ul>
+                                        <li>Firefox <span>1+</span></li>
+                                        <li>Google Chrome <span>1+</span></li>
+                                        <li>Internet Explorer <span>2+</span></li>
+                                        <li>Apple Safari <span>1+</span></li>
+                                        <li>Opera <span>2.1+</span></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <h2>Further Reading</h2>
+                <p>See tutorial on: <a href="../html-tutorial/html-introduction.php">HTML Introduction</a>.</p>
+                <p>Related tags: <a href="html-html-tag.php"><code>&lt;html&gt;</code></a>, <a href="html-head-tag.php"><code>&lt;head&gt;</code></a>.</p>
+                <!--Bottom Navigation-->
+                <div class="bottom-link clearfix">
+                    <a href="html-blockquote-tag.php" class="previous-page-bottom">Previous Page</a>
+                    <a href="html-br-tag.php" class="next-page-bottom">Next Page</a>
+                </div>
+                <!--End:Bottom Navigation--> 
+          		<!-- InstanceEndEditable -->
+                <div class="bottom-ad clearfix">
+
+     <div class="ad-label">Advertisements</div>
+
+     <!--Rectangle Left-->
+     <div class="rectangle-left fl">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+        <!-- Large Rectangle Left -->
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:336px;height:280px"
+            data-ad-client="ca-pub-9107540490929984"
+            data-ad-slot="8162953958"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+     </div>
+     <!--End:Rectangle Left-->
+
+     <!--Rectangle Right-->
+     <div class="rectangle-right fr">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+        <!-- Large Rectangle Right -->
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:336px;height:280px"
+            data-ad-client="ca-pub-9107540490929984"
+            data-ad-slot="3324015654"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+     </div>
+     <!--End:Rectangle Right-->
+
+</div>            </div>
+            <!--End:Text Content-->
+            <!--Feedback Form-->
+			<div class="snippets">
+	<a href="/snippets/gallery.php" target="_blank"><img src="/lib/images/bootstrap-code-snippets.png" alt="Bootstrap UI Design Templates" /></a>
+	<a href="https://www.propertymarvels.com/" class="pm hide" rel="nofollow" target="_blank"><img src="/lib/images/propertymarvels.png" alt="Property Marvels"></a>
+</div>            <!--End:Feedback Form-->
+        </div>        
+        <div class="rightcolumn">
+            <div class="sidebar">
+    
+    <div class="ad-label">Advertisements</div>
+
+    <div class="skyscraper primary">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+        crossorigin="anonymous"></script>
+        <!-- Premium Skyscraper -->
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:160px;height:600px"
+            data-ad-client="ca-pub-9107540490929984"
+            data-ad-slot="4376141825"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9107540490929984"
+     crossorigin="anonymous"></script>
+<!-- Bottom Skyscraper -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-9107540490929984"
+     data-ad-slot="3387984471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>        </div>
+    </div>
+    <!--Footer-->
+	<!--Footer-->
+<div class="footer">
+    <div class="appeal">
+        <div class="wrapper">
+            <p>Is this website helpful to you? Please give us a
+            <a href="/like.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">like</a>,
+            or share your <a href="/contact-us.php" target="_blank">feedback</a><em> to help us improve</em>.
+            Connect with us on <a href="https://www.facebook.com/tutorialrepublic" target="_blank">Facebook</a> and <a href="https://twitter.com/tutrepublic" target="_blank">Twitter</a> for the latest updates.</p>               
+        </div>
+    </div>
+    <div class="footer-inner">
+        <div class="wrapper clearfix">                
+            <div class="link-box">
+                <h4>About Us</h4>
+                <div class="clearfix">
+                    <a href="/about-us.php">Our Story</a>                    
+                    <a href="/terms-of-use.php">Terms of Use</a>
+                    <a href="/privacy-policy.php">Privacy Policy</a>                    
+                </div>
+            </div>
+            <div class="link-box">
+                <h4>Contact</h4>
+                <div class="clearfix">
+                    <a href="/contact-us.php">Contact Us</a>                    
+                    <a href="/contact-us.php" target="_blank">Report Error</a>
+                    <a href="/advertise-with-us.php">Advertise</a>                    
+                </div>
+            </div>
+            <div class="tool-box">
+                <h4>Interactive Tools</h4>
+                <div class="tools-list clearfix" id="tools">
+					<a href="/bootstrap-icons-classes.php" target="_blank">Bootstrap Icon Search Utility</a>
+                    <a href="/html-formatter.php" target="_blank">HTML Formatter</a>
+                    <a href="/faq/what-is-the-maximum-length-of-title-and-meta-description-tag.php">Title &amp; Meta Length Calculator</a>
+                    <a href="/html-reference/html-color-picker.php">HTML Color Picker</a>
+                    <a href="/twitter-bootstrap-button-generator.php" target="_blank">Bootstrap Button Generator</a>
+                    <a href="/codelab.php?topic=sql&amp;file=select-all" target="_blank">SQL Playground</a>
+                    <a href="/font-awesome-icons-classes.php" target="_blank">Font Awesome Icon Finder</a>
+                    <a href="/codelab.php?topic=html&amp;file=hello-world" target="_blank">HTML Editor</a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <p><img src="/lib/images/logo.svg" alt="TutorialRepublic" /><p>
+					<div>
+						<a href="https://www.buymeacoffee.com/tutrepublic" class="bmc-btn" rel="nofollow" target="_blank">
+    						<img src="/lib/images/bmc-btn.png" alt="BMC" />
+						</a>
+					</div>
+            </div>
+        </div>
+    </div>           
+        <div class="bottom-strip">
+        <div class="wrapper">
+            <div class="notice">Copyright &copy; 2023 Tutorial Republic. All Rights Reserved.</div>
+            <div class="social-media">
+                <em>Share This:</em>
+                <a href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fhtml-reference%2Fhtml-body-tag.php" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;" title="Facebook"><i class="icon-facebook"></i></a>
+                <a href="#" id="tweet-btn" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;" title="Twitter"><i class="icon-twitter"></i></a>
+                <a href="#" id="email-btn" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;" rel="noreferrer" title="Gmail"><i class="icon-mail"></i></a>
+            </div>
+        </div>            
+    </div>
+    <script>
+        var title = document.title.replace('- Tutorial Republic', '');
+        document.getElementById('tweet-btn').href = 'https://twitter.com/share?text=' + title + '- &url=https://www.tutorialrepublic.com%2Fhtml-reference%2Fhtml-body-tag.php';
+        document.getElementById('email-btn').href = 'https://mail.google.com/mail/?view=cm&fs=1&su=' + title + '&body=https://www.tutorialrepublic.com%2Fhtml-reference%2Fhtml-body-tag.php';
+    </script>
+</div>
+<!--End:Footer-->
+    
+<div class="backdrop mobile-only"></div>
+
+<!-- TutorialRepublic base script -->
+<script>
+// Adding CSS files
+[	
+	'/lib/styles/legacy/extended-1.1.css',
+	'/lib/icomoon/style.css'
+].forEach(function(href) {
+	var link = document.createElement('link');
+	link.rel = 'stylesheet';
+	link.href = href;
+	(document.getElementsByTagName('head')[0]).appendChild(link);
+});
+
+// Adding JS files
+[
+	'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js',
+	'/lib/js/prism.js',
+	'/lib/js/default-1.3.js'
+].forEach(function(src) {
+	var script = document.createElement('script');
+	script.async = false; // important
+	script.src = src;
+	(document.getElementsByTagName('body')[0]).appendChild(script);
+});
+
+// Showing PropertyMarvels 
+var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+if((timezone.indexOf('Calcutta') !== -1) || (timezone.indexOf('Kolkata') !== -1)){
+    document.querySelector('.pm').style.display = 'block';
+}
+</script>
+
+
+    <!--End:Footer-->
+</body>
+<!-- InstanceEnd --></html>

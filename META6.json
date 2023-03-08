@@ -1,0 +1,15 @@
+{
+  "auth": "zef:tony-o",
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "A brand new and very nice module",
+  "name": "Ryml",
+  "provides": {
+    "Ryml": "lib/Ryml.rakumod"
+  },
+  "resources": [
+  ],
+  "version": "0.0.1"
+}

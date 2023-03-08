@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 Error - Page Not Found</title>
+    <style type="text/css">
+        body, h1, h2, p{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: #414141;
+            background: #fafafa;
+            font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+            text-align: center;
+            font-size: 17px;
+        }
+		.clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .container{
+            width: 1000px;
+            padding: 0 0 15px;
+            margin: 0 auto;
+        }
+        h1{
+            color: #18bb9c;
+            font-size: 240px;        
+        }
+        h2{
+            font-size: 28px;
+            padding-bottom: 25px;
+            letter-spacing: 1px;
+        }
+        p{
+            color: #909090;
+            line-height: 1.7; 
+        }
+        a, a:visited{
+            outline: none;
+            color: #18bb9c;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+		form{
+            display: inline-block;
+            margin-top: 25px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0 25px;
+            background: #18bb9c;
+            border: none;
+            min-height: 38px;
+            border-radius: 2px;
+            outline: none;
+            transition: all 0.5s;
+            color: #fff;
+            line-height: 36px;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            margin-left: 10px;
+            float: left;
+            font-size: 92%;
+            cursor: pointer;
+        }
+        input.search {
+            background: #fff;
+            border: 0 none;
+            color: #807E7E;
+            float: left;
+            height: 38px;
+            line-height: 38px;
+            outline: medium none;
+            padding: 6px 14px;
+            width: 500px;
+            border-radius: 2px;
+            box-shadow: 0 0 1px rgba(0,0,0,0.6);
+            font-family: inherit;
+            box-sizing: border-box;
+            font-size: 92%;
+        }
+		.space{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p class="space">Sorry, the page you are looking for could not be found. Kindly do one thing: if you've typed the <br />URL manually, double check the spelling, or if you've clicked a broken link, please <a href="/contact-us.php" target="_top">let us know</a> where the broken link came from.</p>
+        <p>Alternatively, you can go to <a href="https://www.tutorialrepublic.com/">home page</a> and use the menu links to navigate to a specific section, or use the <br />following search box to find out the information you are looking for, thank you.</p>
+        <form action="https://www.google.com/search" method="get" target="_blank" class="site-search clearfix">
+            <input type="hidden" value="www.tutorialrepublic.com" name="sitesearch" />            
+            <input type="text" name="q" placeholder="Search topics, tutorials, questions and answers..." id="searchInput" class="search" />
+            <input type="submit" value="Search" class="btn" />
+        </form>
+    </div>    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
