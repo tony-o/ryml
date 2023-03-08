@@ -7,7 +7,9 @@
   "description": "A brand new and very nice module",
   "name": "Ryml",
   "provides": {
-    "Ryml": "lib/Ryml.rakumod"
+    "RyEl": "lib/Ryml.rakumod",
+    "Ryml": "lib/Ryml.rakumod",
+    "Ryml::Components": "lib/Ryml/Components.rakumod"
   },
   "resources": [
   ],
