@@ -6,7 +6,6 @@ class RyEl is export {
   has %!tags;
 
   submethod BUILD(Str:D :$!tag, :@!children, :%!tags) {
-    dd {:$!tag, :@!children, :%!tags };
   }
 
   method !pct($val) {

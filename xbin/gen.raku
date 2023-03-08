@@ -49,8 +49,11 @@ my %to-gen = (
        frame => { frameborder => ['0', '1'], longdesc => Str, marginheight => Int, marginwidth => Int, name => Str, noresize => Bool, scrolling => ['yes', 'no', 'auto'], src => Str, },
     frameset => { cols => Array[Num], rows => Array[Num], },
         head => { profile => Str, },
-      header => { },
-    headings => { align => ['left', 'right', 'center', 'justify'], },
+          h1 => { align => ['left', 'right', 'center', 'justify'], },
+          h2 => { align => ['left', 'right', 'center', 'justify'], },
+          h3 => { align => ['left', 'right', 'center', 'justify'], },
+          h4 => { align => ['left', 'right', 'center', 'justify'], },
+          h5 => { align => ['left', 'right', 'center', 'justify'], },
       hgroup => { },
           hr => { align => ['left', 'center', 'right'], noshade => Bool, size => Int, width => Int, },
         html => { manifest => Str, xmlns => Str, version => Str, },
@@ -184,7 +187,7 @@ for %to-gen.keys.sort -> $k {
   my @attr = |%global-attr.keys, |$v.keys;
   $full-out = $full-out ~ "\n\n" ~ qq:to/EOF/;
 sub circumfix:<{$k}[ ]> (
-  \@children,{ gen-attr-str(:tag($k), |%global-attr, |$v) } --> RyEl) is export \{
+  *\@children,{ gen-attr-str(:tag($k), |%global-attr, |$v) } --> RyEl) is export \{
 
   RyEl.new(:tag<$k>,
            :\@children,

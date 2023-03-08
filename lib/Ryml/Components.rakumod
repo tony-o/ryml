@@ -17,7 +17,11 @@ enum FormmethodT is export <FORMMETHOD_get FORMMETHOD_post>;
 enum FormtargetT is export <FORMTARGET__blank FORMTARGET__self FORMTARGET__parent FORMTARGET__top>;
 enum FrameT is export <FRAME_above FRAME_below FRAME_border FRAME_box FRAME_hsides FRAME_lhs FRAME_rhs FRAME_void FRAME_vsides>;
 enum FrameborderT is export <FRAMEBORDER_0 FRAMEBORDER_1>;
-enum HeadingsAlignT is export <HEADINGSALIGN_left HEADINGSALIGN_right HEADINGSALIGN_center HEADINGSALIGN_justify>;
+enum H1AlignT is export <H1ALIGN_left H1ALIGN_right H1ALIGN_center H1ALIGN_justify>;
+enum H2AlignT is export <H2ALIGN_left H2ALIGN_right H2ALIGN_center H2ALIGN_justify>;
+enum H3AlignT is export <H3ALIGN_left H3ALIGN_right H3ALIGN_center H3ALIGN_justify>;
+enum H4AlignT is export <H4ALIGN_left H4ALIGN_right H4ALIGN_center H4ALIGN_justify>;
+enum H5AlignT is export <H5ALIGN_left H5ALIGN_right H5ALIGN_center H5ALIGN_justify>;
 enum HrAlignT is export <HRALIGN_left HRALIGN_center HRALIGN_right>;
 enum Http-equivT is export <HTTP-EQUIV_content-type HTTP-EQUIV_default-style HTTP-EQUIV_refresh>;
 enum InputTypeT is export <INPUTTYPE_button INPUTTYPE_checkbox INPUTTYPE_color INPUTTYPE_date  INPUTTYPE_datetime  INPUTTYPE_datetime-local  INPUTTYPE_email  INPUTTYPE_file INPUTTYPE_hidden INPUTTYPE_image INPUTTYPE_month  INPUTTYPE_number  INPUTTYPE_password INPUTTYPE_radio INPUTTYPE_range  INPUTTYPE_reset INPUTTYPE_search INPUTTYPE_submit INPUTTYPE_tel INPUTTYPE_text INPUTTYPE_time  INPUTTYPE_url INPUTTYPE_week>;
@@ -43,7 +47,7 @@ enum WrapT is export <WRAP_hard WRAP_soft>;
 
 
 sub circumfix:<a[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Str :$charset,
@@ -115,7 +119,7 @@ sub circumfix:<a[ ]> (
 
 
 sub circumfix:<abbr[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -163,7 +167,7 @@ sub circumfix:<abbr[ ]> (
 
 
 sub circumfix:<acronym[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -211,7 +215,7 @@ sub circumfix:<acronym[ ]> (
 
 
 sub circumfix:<address[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -259,7 +263,7 @@ sub circumfix:<address[ ]> (
 
 
 sub circumfix:<applet[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -327,7 +331,7 @@ sub circumfix:<applet[ ]> (
 
 
 sub circumfix:<area[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Str :$alt,
@@ -397,7 +401,7 @@ sub circumfix:<area[ ]> (
 
 
 sub circumfix:<article[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -445,7 +449,7 @@ sub circumfix:<article[ ]> (
 
 
 sub circumfix:<aside[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -493,7 +497,7 @@ sub circumfix:<aside[ ]> (
 
 
 sub circumfix:<audio[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -541,7 +545,7 @@ sub circumfix:<audio[ ]> (
 
 
 sub circumfix:<b[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -589,7 +593,7 @@ sub circumfix:<b[ ]> (
 
 
 sub circumfix:<base[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -641,7 +645,7 @@ sub circumfix:<base[ ]> (
 
 
 sub circumfix:<basefont[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -695,7 +699,7 @@ sub circumfix:<basefont[ ]> (
 
 
 sub circumfix:<bdi[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -743,7 +747,7 @@ sub circumfix:<bdi[ ]> (
 
 
 sub circumfix:<bdo[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -791,7 +795,7 @@ sub circumfix:<bdo[ ]> (
 
 
 sub circumfix:<big[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -839,7 +843,7 @@ sub circumfix:<big[ ]> (
 
 
 sub circumfix:<blockquote[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Str :$cite,
@@ -889,7 +893,7 @@ sub circumfix:<blockquote[ ]> (
 
 
 sub circumfix:<body[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Str :$alink,
@@ -949,7 +953,7 @@ sub circumfix:<body[ ]> (
 
 
 sub circumfix:<br[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -999,7 +1003,7 @@ sub circumfix:<br[ ]> (
 
 
 sub circumfix:<button[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Bool :$autofocus,
@@ -1069,7 +1073,7 @@ sub circumfix:<button[ ]> (
 
 
 sub circumfix:<canvas[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1121,7 +1125,7 @@ sub circumfix:<canvas[ ]> (
 
 
 sub circumfix:<caption[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   CaptionAlignT :$align,
@@ -1171,7 +1175,7 @@ sub circumfix:<caption[ ]> (
 
 
 sub circumfix:<center[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1219,7 +1223,7 @@ sub circumfix:<center[ ]> (
 
 
 sub circumfix:<cite[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1267,7 +1271,7 @@ sub circumfix:<cite[ ]> (
 
 
 sub circumfix:<code[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1315,7 +1319,7 @@ sub circumfix:<code[ ]> (
 
 
 sub circumfix:<col[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -1375,7 +1379,7 @@ sub circumfix:<col[ ]> (
 
 
 sub circumfix:<colgroup[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -1435,7 +1439,7 @@ sub circumfix:<colgroup[ ]> (
 
 
 sub circumfix:<data[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1485,7 +1489,7 @@ sub circumfix:<data[ ]> (
 
 
 sub circumfix:<datalist[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1533,7 +1537,7 @@ sub circumfix:<datalist[ ]> (
 
 
 sub circumfix:<dd[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1581,7 +1585,7 @@ sub circumfix:<dd[ ]> (
 
 
 sub circumfix:<del[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Str :$cite,
@@ -1633,7 +1637,7 @@ sub circumfix:<del[ ]> (
 
 
 sub circumfix:<details[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1681,7 +1685,7 @@ sub circumfix:<details[ ]> (
 
 
 sub circumfix:<dfn[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1729,7 +1733,7 @@ sub circumfix:<dfn[ ]> (
 
 
 sub circumfix:<dialog[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1779,7 +1783,7 @@ sub circumfix:<dialog[ ]> (
 
 
 sub circumfix:<dir[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1829,7 +1833,7 @@ sub circumfix:<dir[ ]> (
 
 
 sub circumfix:<div[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   DivAlignT :$align,
@@ -1879,7 +1883,7 @@ sub circumfix:<div[ ]> (
 
 
 sub circumfix:<dl[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1895,6 +1899,7 @@ sub circumfix:<dl[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
+  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
@@ -1926,7 +1931,7 @@ sub circumfix:<dl[ ]> (
 
 
 sub circumfix:<dt[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1942,6 +1947,7 @@ sub circumfix:<dt[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
+  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
@@ -1973,7 +1979,7 @@ sub circumfix:<dt[ ]> (
 
 
 sub circumfix:<em[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -1989,6 +1995,7 @@ sub circumfix:<em[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
+  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
@@ -2020,7 +2027,7 @@ sub circumfix:<em[ ]> (
 
 
 sub circumfix:<embed[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2036,6 +2043,7 @@ sub circumfix:<embed[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
+  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
@@ -2067,7 +2075,7 @@ sub circumfix:<embed[ ]> (
 
 
 sub circumfix:<fieldset[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2083,6 +2091,7 @@ sub circumfix:<fieldset[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
+  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
@@ -2114,7 +2123,7 @@ sub circumfix:<fieldset[ ]> (
 
 
 sub circumfix:<figcaption[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2130,6 +2139,7 @@ sub circumfix:<figcaption[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
+  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
@@ -2161,7 +2171,7 @@ sub circumfix:<figcaption[ ]> (
 
 
 sub circumfix:<figure[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2177,6 +2187,7 @@ sub circumfix:<figure[ ]> (
   Bool :$spellcheck,
   Str :$style,
   Num :$tabindex,
+  Str :$tag,
   Str :$title,
   Bool :$translate,
   Str :$xml-lang,
@@ -2208,7 +2219,7 @@ sub circumfix:<figure[ ]> (
 
 
 sub circumfix:<font[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2262,7 +2273,7 @@ sub circumfix:<font[ ]> (
 
 
 sub circumfix:<footer[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2309,7 +2320,7 @@ sub circumfix:<footer[ ]> (
 
 
 sub circumfix:<form[ ]> (
-  @children,
+  *@children,
 
   Str :$accept,
   Str :$accept-charset,
@@ -2375,7 +2386,7 @@ sub circumfix:<form[ ]> (
 
 
 sub circumfix:<frame[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2439,7 +2450,7 @@ sub circumfix:<frame[ ]> (
 
 
 sub circumfix:<frameset[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2490,8 +2501,258 @@ sub circumfix:<frameset[ ]> (
 }
 
 
+sub circumfix:<h1[ ]> (
+  *@children,
+
+  Str :$accesskey,
+  H1AlignT :$align,
+  Array[Str] :$class,
+  Bool :$contenteditable,
+  Str :$contextmenu,
+  Str :$data,
+  DirT :$dir,
+  Bool :$draggable,
+  DropzoneT :$dropzone,
+  Bool :$hidden,
+  Str :$id,
+  Str :$lang,
+  Bool :$spellcheck,
+  Str :$style,
+  Num :$tabindex,
+  Str :$tag,
+  Str :$title,
+  Bool :$translate,
+  Str :$xml-lang,
+   --> RyEl) is export {
+
+  RyEl.new(:tag<h1>,
+           :@children,
+           :tags({
+             :$accesskey,
+             :$align,
+             :$class,
+             :$contenteditable,
+             :$contextmenu,
+             :$data,
+             :$dir,
+             :$draggable,
+             :$dropzone,
+             :$hidden,
+             :$id,
+             :$lang,
+             :$spellcheck,
+             :$style,
+             :$tabindex,
+             :$title,
+             :$translate,
+             :$xml-lang,
+            })
+          ); 
+}
+
+
+sub circumfix:<h2[ ]> (
+  *@children,
+
+  Str :$accesskey,
+  H2AlignT :$align,
+  Array[Str] :$class,
+  Bool :$contenteditable,
+  Str :$contextmenu,
+  Str :$data,
+  DirT :$dir,
+  Bool :$draggable,
+  DropzoneT :$dropzone,
+  Bool :$hidden,
+  Str :$id,
+  Str :$lang,
+  Bool :$spellcheck,
+  Str :$style,
+  Num :$tabindex,
+  Str :$tag,
+  Str :$title,
+  Bool :$translate,
+  Str :$xml-lang,
+   --> RyEl) is export {
+
+  RyEl.new(:tag<h2>,
+           :@children,
+           :tags({
+             :$accesskey,
+             :$align,
+             :$class,
+             :$contenteditable,
+             :$contextmenu,
+             :$data,
+             :$dir,
+             :$draggable,
+             :$dropzone,
+             :$hidden,
+             :$id,
+             :$lang,
+             :$spellcheck,
+             :$style,
+             :$tabindex,
+             :$title,
+             :$translate,
+             :$xml-lang,
+            })
+          ); 
+}
+
+
+sub circumfix:<h3[ ]> (
+  *@children,
+
+  Str :$accesskey,
+  H3AlignT :$align,
+  Array[Str] :$class,
+  Bool :$contenteditable,
+  Str :$contextmenu,
+  Str :$data,
+  DirT :$dir,
+  Bool :$draggable,
+  DropzoneT :$dropzone,
+  Bool :$hidden,
+  Str :$id,
+  Str :$lang,
+  Bool :$spellcheck,
+  Str :$style,
+  Num :$tabindex,
+  Str :$tag,
+  Str :$title,
+  Bool :$translate,
+  Str :$xml-lang,
+   --> RyEl) is export {
+
+  RyEl.new(:tag<h3>,
+           :@children,
+           :tags({
+             :$accesskey,
+             :$align,
+             :$class,
+             :$contenteditable,
+             :$contextmenu,
+             :$data,
+             :$dir,
+             :$draggable,
+             :$dropzone,
+             :$hidden,
+             :$id,
+             :$lang,
+             :$spellcheck,
+             :$style,
+             :$tabindex,
+             :$title,
+             :$translate,
+             :$xml-lang,
+            })
+          ); 
+}
+
+
+sub circumfix:<h4[ ]> (
+  *@children,
+
+  Str :$accesskey,
+  H4AlignT :$align,
+  Array[Str] :$class,
+  Bool :$contenteditable,
+  Str :$contextmenu,
+  Str :$data,
+  DirT :$dir,
+  Bool :$draggable,
+  DropzoneT :$dropzone,
+  Bool :$hidden,
+  Str :$id,
+  Str :$lang,
+  Bool :$spellcheck,
+  Str :$style,
+  Num :$tabindex,
+  Str :$tag,
+  Str :$title,
+  Bool :$translate,
+  Str :$xml-lang,
+   --> RyEl) is export {
+
+  RyEl.new(:tag<h4>,
+           :@children,
+           :tags({
+             :$accesskey,
+             :$align,
+             :$class,
+             :$contenteditable,
+             :$contextmenu,
+             :$data,
+             :$dir,
+             :$draggable,
+             :$dropzone,
+             :$hidden,
+             :$id,
+             :$lang,
+             :$spellcheck,
+             :$style,
+             :$tabindex,
+             :$title,
+             :$translate,
+             :$xml-lang,
+            })
+          ); 
+}
+
+
+sub circumfix:<h5[ ]> (
+  *@children,
+
+  Str :$accesskey,
+  H5AlignT :$align,
+  Array[Str] :$class,
+  Bool :$contenteditable,
+  Str :$contextmenu,
+  Str :$data,
+  DirT :$dir,
+  Bool :$draggable,
+  DropzoneT :$dropzone,
+  Bool :$hidden,
+  Str :$id,
+  Str :$lang,
+  Bool :$spellcheck,
+  Str :$style,
+  Num :$tabindex,
+  Str :$tag,
+  Str :$title,
+  Bool :$translate,
+  Str :$xml-lang,
+   --> RyEl) is export {
+
+  RyEl.new(:tag<h5>,
+           :@children,
+           :tags({
+             :$accesskey,
+             :$align,
+             :$class,
+             :$contenteditable,
+             :$contextmenu,
+             :$data,
+             :$dir,
+             :$draggable,
+             :$dropzone,
+             :$hidden,
+             :$id,
+             :$lang,
+             :$spellcheck,
+             :$style,
+             :$tabindex,
+             :$title,
+             :$translate,
+             :$xml-lang,
+            })
+          ); 
+}
+
+
 sub circumfix:<head[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2540,105 +2801,8 @@ sub circumfix:<head[ ]> (
 }
 
 
-sub circumfix:<header[ ]> (
-  @children,
-
-  Str :$accesskey,
-  Array[Str] :$class,
-  Bool :$contenteditable,
-  Str :$contextmenu,
-  Str :$data,
-  DirT :$dir,
-  Bool :$draggable,
-  DropzoneT :$dropzone,
-  Bool :$hidden,
-  Str :$id,
-  Str :$lang,
-  Bool :$spellcheck,
-  Str :$style,
-  Num :$tabindex,
-  Str :$title,
-  Bool :$translate,
-  Str :$xml-lang,
-   --> RyEl) is export {
-
-  RyEl.new(:tag<header>,
-           :@children,
-           :tags({
-             :$accesskey,
-             :$class,
-             :$contenteditable,
-             :$contextmenu,
-             :$data,
-             :$dir,
-             :$draggable,
-             :$dropzone,
-             :$hidden,
-             :$id,
-             :$lang,
-             :$spellcheck,
-             :$style,
-             :$tabindex,
-             :$title,
-             :$translate,
-             :$xml-lang,
-            })
-          ); 
-}
-
-
-sub circumfix:<headings[ ]> (
-  @children,
-
-  Str :$accesskey,
-  HeadingsAlignT :$align,
-  Array[Str] :$class,
-  Bool :$contenteditable,
-  Str :$contextmenu,
-  Str :$data,
-  DirT :$dir,
-  Bool :$draggable,
-  DropzoneT :$dropzone,
-  Bool :$hidden,
-  Str :$id,
-  Str :$lang,
-  Bool :$spellcheck,
-  Str :$style,
-  Num :$tabindex,
-  Str :$tag,
-  Str :$title,
-  Bool :$translate,
-  Str :$xml-lang,
-   --> RyEl) is export {
-
-  RyEl.new(:tag<headings>,
-           :@children,
-           :tags({
-             :$accesskey,
-             :$align,
-             :$class,
-             :$contenteditable,
-             :$contextmenu,
-             :$data,
-             :$dir,
-             :$draggable,
-             :$dropzone,
-             :$hidden,
-             :$id,
-             :$lang,
-             :$spellcheck,
-             :$style,
-             :$tabindex,
-             :$title,
-             :$translate,
-             :$xml-lang,
-            })
-          ); 
-}
-
-
 sub circumfix:<hgroup[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2685,7 +2849,7 @@ sub circumfix:<hgroup[ ]> (
 
 
 sub circumfix:<hr[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   HrAlignT :$align,
@@ -2741,7 +2905,7 @@ sub circumfix:<hr[ ]> (
 
 
 sub circumfix:<html[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2795,7 +2959,7 @@ sub circumfix:<html[ ]> (
 
 
 sub circumfix:<i[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -2842,7 +3006,7 @@ sub circumfix:<i[ ]> (
 
 
 sub circumfix:<iframe[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -2916,7 +3080,7 @@ sub circumfix:<iframe[ ]> (
 
 
 sub circumfix:<img[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -2988,7 +3152,7 @@ sub circumfix:<img[ ]> (
 
 
 sub circumfix:<input[ ]> (
-  @children,
+  *@children,
 
   AcceptT :$accept,
   Str :$accesskey,
@@ -3098,7 +3262,7 @@ sub circumfix:<input[ ]> (
 
 
 sub circumfix:<ins[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Str :$cite,
@@ -3150,7 +3314,7 @@ sub circumfix:<ins[ ]> (
 
 
 sub circumfix:<kbd[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3197,7 +3361,7 @@ sub circumfix:<kbd[ ]> (
 
 
 sub circumfix:<keygen[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3244,7 +3408,7 @@ sub circumfix:<keygen[ ]> (
 
 
 sub circumfix:<label[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3296,7 +3460,7 @@ sub circumfix:<label[ ]> (
 
 
 sub circumfix:<legend[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   LegendAlignT :$align,
@@ -3346,7 +3510,7 @@ sub circumfix:<legend[ ]> (
 
 
 sub circumfix:<li[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3398,7 +3562,7 @@ sub circumfix:<li[ ]> (
 
 
 sub circumfix:<link[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Str :$charset,
@@ -3466,7 +3630,7 @@ sub circumfix:<link[ ]> (
 
 
 sub circumfix:<main[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3513,7 +3677,7 @@ sub circumfix:<main[ ]> (
 
 
 sub circumfix:<map[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3563,7 +3727,7 @@ sub circumfix:<map[ ]> (
 
 
 sub circumfix:<mark[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3610,7 +3774,7 @@ sub circumfix:<mark[ ]> (
 
 
 sub circumfix:<menu[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3662,7 +3826,7 @@ sub circumfix:<menu[ ]> (
 
 
 sub circumfix:<menuitem[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3709,7 +3873,7 @@ sub circumfix:<menuitem[ ]> (
 
 
 sub circumfix:<meta[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Str :$charset,
@@ -3767,7 +3931,7 @@ sub circumfix:<meta[ ]> (
 
 
 sub circumfix:<meter[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3814,7 +3978,7 @@ sub circumfix:<meter[ ]> (
 
 
 sub circumfix:<nav[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3861,7 +4025,7 @@ sub circumfix:<nav[ ]> (
 
 
 sub circumfix:<noframes[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3908,7 +4072,7 @@ sub circumfix:<noframes[ ]> (
 
 
 sub circumfix:<noscript[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -3955,7 +4119,7 @@ sub circumfix:<noscript[ ]> (
 
 
 sub circumfix:<object[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -4035,7 +4199,7 @@ sub circumfix:<object[ ]> (
 
 
 sub circumfix:<ol[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4091,7 +4255,7 @@ sub circumfix:<ol[ ]> (
 
 
 sub circumfix:<optgroup[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4143,7 +4307,7 @@ sub circumfix:<optgroup[ ]> (
 
 
 sub circumfix:<option[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4199,7 +4363,7 @@ sub circumfix:<option[ ]> (
 
 
 sub circumfix:<output[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4246,7 +4410,7 @@ sub circumfix:<output[ ]> (
 
 
 sub circumfix:<p[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   PAlignT :$align,
@@ -4296,7 +4460,7 @@ sub circumfix:<p[ ]> (
 
 
 sub circumfix:<param[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4352,7 +4516,7 @@ sub circumfix:<param[ ]> (
 
 
 sub circumfix:<picture[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4399,7 +4563,7 @@ sub circumfix:<picture[ ]> (
 
 
 sub circumfix:<pre[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4449,7 +4613,7 @@ sub circumfix:<pre[ ]> (
 
 
 sub circumfix:<progress[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4496,7 +4660,7 @@ sub circumfix:<progress[ ]> (
 
 
 sub circumfix:<q[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Str :$cite,
@@ -4546,7 +4710,7 @@ sub circumfix:<q[ ]> (
 
 
 sub circumfix:<rp[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4593,7 +4757,7 @@ sub circumfix:<rp[ ]> (
 
 
 sub circumfix:<rt[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4640,7 +4804,7 @@ sub circumfix:<rt[ ]> (
 
 
 sub circumfix:<ruby[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4687,7 +4851,7 @@ sub circumfix:<ruby[ ]> (
 
 
 sub circumfix:<s[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4734,7 +4898,7 @@ sub circumfix:<s[ ]> (
 
 
 sub circumfix:<samp[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4781,7 +4945,7 @@ sub circumfix:<samp[ ]> (
 
 
 sub circumfix:<script[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Bool :$async,
@@ -4841,7 +5005,7 @@ sub circumfix:<script[ ]> (
 
 
 sub circumfix:<section[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4888,7 +5052,7 @@ sub circumfix:<section[ ]> (
 
 
 sub circumfix:<select[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Bool :$autofocus,
@@ -4950,7 +5114,7 @@ sub circumfix:<select[ ]> (
 
 
 sub circumfix:<small[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -4997,7 +5161,7 @@ sub circumfix:<small[ ]> (
 
 
 sub circumfix:<source[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5044,7 +5208,7 @@ sub circumfix:<source[ ]> (
 
 
 sub circumfix:<span[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5091,7 +5255,7 @@ sub circumfix:<span[ ]> (
 
 
 sub circumfix:<strike[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5138,7 +5302,7 @@ sub circumfix:<strike[ ]> (
 
 
 sub circumfix:<strong[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5185,7 +5349,7 @@ sub circumfix:<strong[ ]> (
 
 
 sub circumfix:<style[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5239,7 +5403,7 @@ sub circumfix:<style[ ]> (
 
 
 sub circumfix:<sub[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5286,7 +5450,7 @@ sub circumfix:<sub[ ]> (
 
 
 sub circumfix:<summary[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5333,7 +5497,7 @@ sub circumfix:<summary[ ]> (
 
 
 sub circumfix:<sup[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5380,7 +5544,7 @@ sub circumfix:<sup[ ]> (
 
 
 sub circumfix:<svg[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5427,7 +5591,7 @@ sub circumfix:<svg[ ]> (
 
 
 sub circumfix:<table[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   TableAlignT :$align,
@@ -5495,7 +5659,7 @@ sub circumfix:<table[ ]> (
 
 
 sub circumfix:<tbody[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -5551,7 +5715,7 @@ sub circumfix:<tbody[ ]> (
 
 
 sub circumfix:<td[ ]> (
-  @children,
+  *@children,
 
   Str :$abbr,
   Str :$accesskey,
@@ -5627,7 +5791,7 @@ sub circumfix:<td[ ]> (
 
 
 sub circumfix:<template[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5674,7 +5838,7 @@ sub circumfix:<template[ ]> (
 
 
 sub circumfix:<textarea[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Bool :$autofocus,
@@ -5746,7 +5910,7 @@ sub circumfix:<textarea[ ]> (
 
 
 sub circumfix:<tfoot[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -5802,7 +5966,7 @@ sub circumfix:<tfoot[ ]> (
 
 
 sub circumfix:<th[ ]> (
-  @children,
+  *@children,
 
   Str :$abbr,
   Str :$accesskey,
@@ -5880,7 +6044,7 @@ sub circumfix:<th[ ]> (
 
 
 sub circumfix:<thead[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -5936,7 +6100,7 @@ sub circumfix:<thead[ ]> (
 
 
 sub circumfix:<time[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -5983,7 +6147,7 @@ sub circumfix:<time[ ]> (
 
 
 sub circumfix:<title[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6030,7 +6194,7 @@ sub circumfix:<title[ ]> (
 
 
 sub circumfix:<tr[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   AlignT :$align,
@@ -6088,7 +6252,7 @@ sub circumfix:<tr[ ]> (
 
 
 sub circumfix:<track[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6135,7 +6299,7 @@ sub circumfix:<track[ ]> (
 
 
 sub circumfix:<tt[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6182,7 +6346,7 @@ sub circumfix:<tt[ ]> (
 
 
 sub circumfix:<u[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6229,7 +6393,7 @@ sub circumfix:<u[ ]> (
 
 
 sub circumfix:<ul[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6281,7 +6445,7 @@ sub circumfix:<ul[ ]> (
 
 
 sub circumfix:<var[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6328,7 +6492,7 @@ sub circumfix:<var[ ]> (
 
 
 sub circumfix:<video[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
@@ -6375,7 +6539,7 @@ sub circumfix:<video[ ]> (
 
 
 sub circumfix:<wbr[ ]> (
-  @children,
+  *@children,
 
   Str :$accesskey,
   Array[Str] :$class,
