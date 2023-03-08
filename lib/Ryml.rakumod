@@ -9,7 +9,11 @@ class RyEl is export {
   }
 
   method !pct($val) {
-    ($val//'').Str;
+    ($val//'').subst(/<-alnum>/, '%' ~ *.ord.base(16).Str.uc);
+  }
+
+  method !body-esc(Str:D $val) {
+    S:g/'<'/&gt;/ given (S:g/'>'/&lt;/ given $val);
   }
 
   method !gen-tags() {
@@ -24,7 +28,7 @@ class RyEl is export {
     my $out = '';
     for @!children -> $child {
       if $child ~~ Str {
-        $out = "$out\n$child";
+        $out = "$out\n{self!body-esc($child)}";
       } elsif $child.WHAT ~~ RyEl {
         $out = "$out\n{$child.render()}";
       } else {

@@ -6,7 +6,8 @@ sub page($name) {
     head[],
     body[
       h1[ 'hello, whatever your name is' ],
-      p[ "just kidding, {$name}" ]:hidden,
+      p[ "<just kidding>, {$name}" ],
+      a[ 'test' ]:href<escape\>>,
     ],
   ].render;
 }
