@@ -5,21 +5,27 @@ class RyEl is export {
   has @!children;
   has %!tags;
 
-  submethod BUILD(Str:D :$!tag, :@!children, :%!tags) {
+  submethod BUILD(Str:D :$!tag, :@!children, :%!tags) {}
+
+  method !pct($tag) {
+    my $esc;
+    if %!tags{$tag}.WHAT ~~ Bool {
+      $esc = $tag;
+    } elsif %!tags{$tag} {
+      $esc = %!tags{$tag};
+    }
+
+    ($esc//'').subst(/<-[a..zA..Z0..9\._~-]>/, '%'~*.ord.base(16).Str.uc, :g);
   }
 
-  method !pct($val) {
-    ($val//'').subst(/<-alnum>/, '%' ~ *.ord.base(16).Str.uc);
-  }
-
-  method !body-esc(Str:D $val) {
-    S:g/'<'/&gt;/ given (S:g/'>'/&lt;/ given $val);
+  method !body-esc(Str:D $val is copy) {
+    $val.subst(/<+[¢£§©«»®°±¶·½\–\—‘’‚“”„†‡•…′″€™≈≠≤≥<>]>/, '&#'~*.ord.Str~';', :g);
   }
 
   method !gen-tags() {
     my $out = '';
     for %!tags.keys.grep({ $_.defined && %!tags{$_}.defined }).sort -> $k {
-      $out = "$out $k=\"{self!pct(%!tags{$k})}\"";
+      $out = "$out $k=\"{self!pct($k)}\"";
     }
     $out;
   }
