@@ -1,5 +1,9 @@
-use Ryml::Components;
+RYML:
 
+An easier templating system for Raku with basic type/tag safety.  Example:
+
+```raku
+use Ryml::Components;
 
 sub page($name) {
   html[
@@ -13,20 +17,5 @@ sub page($name) {
   ].render;
 }
 
-say page('rf');
-
-#  <html>
-#    <head>
-#    
-#    </head>
-#    
-#    <body>
-#      <h1>
-#        hello, whatever your name is
-#      </h1>
-#      
-#      <p hidden="True">
-#        just kidding, rf
-#      </p>
-#    </body>
-#  </html>
+# page('xyz') will render a complete html page
+```
